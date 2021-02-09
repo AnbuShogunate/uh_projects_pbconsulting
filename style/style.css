@@ -29,7 +29,6 @@ body {
 	color: white;
 	font-size: 40px;
 	text-align: center;
-	padding-top: 150px;
 	margin-top: 0px;
 }
 #navBar {
@@ -192,7 +191,7 @@ body {
 
 /*MAIN CONTENT*/
 #wrapper {
-	margin: 0px auto 0px auto;
+	margin: 0px auto -100px auto;
 	width: 1260px;
 	background-color: #ffffff;
 }
@@ -253,15 +252,20 @@ body {
 
 /*footer content*/
 #footer {
-	margin-top: 15px;
-	margin-bottom: 5px;
+	/* margin-top: 15px; */
+	/* margin-bottom: 5px; */
 	border-top: #009fd4 1px solid;
 	background-color: firebrick;
+	height: 100px;
 	color: white;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
+}
+
+.push {
+	height: 100px;
 }
 
 /*RANDOM ELEMENTS*/
