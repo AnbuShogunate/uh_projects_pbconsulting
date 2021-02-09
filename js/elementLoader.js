@@ -11,9 +11,9 @@ $(function () {
     $("#navbar-load").load("/uh_projects_pbconsulting/page_elements/navbar.html");
 });
 $(function(){
-    $('a').each(function(){
-        if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('menu_active'); $(this).parents('li').addClass('menu_active');
+    $('.main_menu_ul li a').each(function(){
+        if (curURL.indexOf(this.href) != -1){
+            $(this).closest('li').addClass('menu_active');
         }
     });
 });
