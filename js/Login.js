@@ -10,7 +10,7 @@ loginsubmit.addEventListener("click", (e) => {
 
     if (name === "root" && pass === "admin") {
         alert("oh yeah");
-        window.location.href = 'AdminMainPage.html';
+        window.location.href = '/uh_projects_pbconsulting/helpdesk/index.html';
     }
     else if (name === "customer" && pass === "sample") {
         alert("welcome back!");
