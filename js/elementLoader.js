@@ -14,7 +14,7 @@ $(function () {
 //https://html-online.com/articles/highlight-active-menu-item-script/
 $(document).ready(function() {
     console.log($(this).attr('href'));
-    $(".main_menu_ul a").each(function() {
+    $("#navbar-load a").each(function() {
         if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
             $(this).parent().addClass('menu_active');
         }
