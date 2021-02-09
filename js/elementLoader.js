@@ -16,7 +16,7 @@ $(function(){
     var url = window.location.href; 
     console.debug(url);
     // passes on every "a" tag 
-    $("#navBar a").each(function() {
+    $("a").each(function() {
             // checks if its the same on the address bar
             console.debug($(this).prop('href'));
             if ($(this).prop('href') == window.location.href) {
