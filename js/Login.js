@@ -1,7 +1,7 @@
-const loginsystem = document.getElementById("login_system");
-const loginsubmit = document.getElementById("login_button");
+var loginsystem = document.getElementById("login_system");
+var loginsubmit = document.getElementById("login_button");
 
-var cookies = {};
+
 
 loginsubmit.addEventListener("click", (e) => {
     e.preventDefault();
@@ -17,7 +17,3 @@ loginsubmit.addEventListener("click", (e) => {
         window.location.href = 'CustomerMainPage.html';
     }
 })
-
-function cookies_save() {
-
-}

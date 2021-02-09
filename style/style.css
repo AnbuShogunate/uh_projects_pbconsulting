@@ -213,9 +213,10 @@ body {
 #mainContent {
 	width: 100%;
 }
-#login-load {
+#login_system {
 	color: black;
 	height: 100px;
+	width: 100%;
 }
 
 /*2 COL LAYOUT*/
