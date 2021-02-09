@@ -267,7 +267,7 @@ body {
 	background-color: firebrick;
 	height: 100px;
 	color: white;
-	position: relative;
+	/* position: relative; */
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
