@@ -18,8 +18,8 @@ $(function(){
     // passes on every "a" tag 
     $("#navBar a").each(function() {
             // checks if its the same on the address bar
-        if(url == (this.href)) { 
-            $(this).closest("li").addClass("menu_active");
-        }
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('menu_active'); $(this).parents('li').addClass('menu_active');
+            }
     });
 });
