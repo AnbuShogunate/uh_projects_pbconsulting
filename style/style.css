@@ -78,6 +78,7 @@ body {
 }
 .main_menu_ul li:hover {
 	background-color: #009fd4;
+	transition: ease-in-out 0.3s;
 }
 .main_menu_ul li:hover .submenu{
 	z-index:1;
