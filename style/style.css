@@ -1,6 +1,7 @@
 /*BODY*/
 body {
 	background-color: #ffffff;
+	height: 100%;
 	/*white square background
 	background-repeat: no-repeat;*/
 	background-image: url("/uh_projects_pbconsulting/style/images/square-xxl.png");
@@ -193,6 +194,8 @@ body {
 #wrapper {
 	margin: 0px auto -100px auto;
 	width: 1260px;
+	min-height: 100%;
+	margin-bottom: -100px;
 	background-color: #ffffff;
 }
 #page_header {
@@ -264,10 +267,6 @@ body {
 	text-align: center;
 }
 
-.push {
-	height: 100px;
-}
-
 /*RANDOM ELEMENTS*/
 
 #contact_form_iframe {
@@ -283,6 +282,9 @@ body {
 	width: 50%;
     zoom: 200%;
 	margin-left: 25%;
+}
+.push {
+	height: 100px;
 }
 
 /*Button Style*/
