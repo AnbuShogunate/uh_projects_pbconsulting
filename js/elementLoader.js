@@ -11,8 +11,15 @@ $(function () {
     $("#navbar-load").load("/uh_projects_pbconsulting/page_elements/navbar.html");
 });
 
-$(document).ready(function() {
-    $('#navBar a').addClass(function(){
-        return this.href == window.location.href ? 'menu_active' : '';
+$(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+    console.debug(url);
+    // passes on every "a" tag 
+    $("#navBar a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("menu_active");
+        }
     });
 });
