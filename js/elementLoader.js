@@ -13,7 +13,7 @@ $(function () {
 
 //https://html-online.com/articles/highlight-active-menu-item-script/
 $(function(){
-    $(".main_menu a").each(function(){
+    $("a").each(function(){
             if ($(this).attr("href") == window.location.pathname){
                     $(this).addClass("menu_active");
             }
