@@ -18,5 +18,6 @@ $(document).ready(function() {
         if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
             $(this).parent().addClass('menu_active');
         }
+        console.log($(this).attr('href'));
     });
 });
