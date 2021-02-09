@@ -11,16 +11,18 @@ $(function () {
     $("#navbar-load").load("/uh_projects_pbconsulting/page_elements/navbar.html");
 });
 
-$(function(){
-    // this will get the full URL at the address bar
-    var url = window.location.href; 
-    console.debug(url);
-    // passes on every "a" tag 
-    $("a").each(function() {
-            // checks if its the same on the address bar
-            console.debug($(this).prop('href'));
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('menu_active'); $(this).parents('li').addClass('menu_active');
+$(document).ready(function () {
+    console.log("current page", window.location.href);
+    $("[href]").each(function () {
+        $('a[href]:not([href=#])').each(function () {
+
+            if (window.location.href.indexOf($(this).attr('href')) > -1) {
+                console.log($(this).attr('href') +" is active ");
+                $(this).addClass('menu_active');
             }
+            else {
+                console.log($(this).attr('href') + "is not active ");
+            }
+        });
     });
 });
