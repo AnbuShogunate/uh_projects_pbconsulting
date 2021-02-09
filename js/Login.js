@@ -1,6 +1,8 @@
 const loginsystem = document.getElementById("login_system");
 const loginsubmit = document.getElementById("login_button");
 
+var cookies = {};
+
 loginsubmit.addEventListener("click", (e) => {
     e.preventDefault();
     const name = loginsystem.user_username.value;
@@ -15,3 +17,7 @@ loginsubmit.addEventListener("click", (e) => {
         window.location.href = 'CustomerMainPage.html';
     }
 })
+
+function cookies_save() {
+
+}

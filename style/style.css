@@ -213,6 +213,10 @@ body {
 #mainContent {
 	width: 100%;
 }
+#login-load {
+	color: black;
+	height: 100px;
+}
 
 /*2 COL LAYOUT*/
 #style_2col_left_panel {
