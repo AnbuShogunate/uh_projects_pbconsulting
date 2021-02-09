@@ -1,6 +1,12 @@
 $(function () {
-    $("#header-load").load("/uh_projects_pbconsulting/page_elements/header.html");
+    $("#header-splash-load").load("../page_elements/header-splash.html");
 });
 $(function () {
-    $("#hfooter-load").load("/uh_projects_pbconsulting/page_elements/footer.html");
+    $("#header-main-load").load("../page_elements/header-main.html");
+});
+$(function () {
+    $("#footer-load").load("../page_elements/footer.html");
+});
+$(function () {
+    $("#navbar-load").load("../page_elements/navbar.html");
 });
