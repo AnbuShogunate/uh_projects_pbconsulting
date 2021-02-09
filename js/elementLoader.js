@@ -11,7 +11,20 @@ $(function () {
     $("#navbar-load").load("/uh_projects_pbconsulting/page_elements/navbar.html");
 });
 
-//https://makitweb.com/highlight-current-page-menu-item-with-jquery/
+$("#navBar li a").click(function() {
+    var $Link = $(this); // cache it as we will use ot mote than once
+    //also url == a.href cannot return true if you use relative url in the link.
+    //url most likely http://domain.com/pagename href will be just a page name
+    //if active do nothing
+    if (!$Link.hasClass("menu_active")) {
+        $Link.closest("ul") //find menu container
+            .find("li.menu_active").removeClass('menu_active'); //find active and remove it
+        $Link.addClass('menu_active');
+    }
+});
+
+
+/* //https://makitweb.com/highlight-current-page-menu-item-with-jquery/
 $(document).ready(function() {
     var url = window.location.href;
     url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
@@ -25,12 +38,12 @@ $(document).ready(function() {
         if(url == href){
             var parentClass = $(this).parent('ul').attr('class');
             if(parentClass == 'submenu'){
-                $(this).addClass('menu_active');
-                //$(this).parents('.main_menu_ul li').addClass('menu_active');
+                $(this).addClass('submenu_active');
+                $(this).parents('.main_menu_ul li').addClass('menu_active');
             }else{
                 $(this).addClass('menu_active');
             }
 
         }
     });
-});
+}); */

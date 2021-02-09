@@ -108,6 +108,9 @@ body {
 .menu_active {
 	background-color: #009fd4;
 }
+.submenu_active {
+	background-color: #a7e0f3;
+}
 #hamburger_toggle {
 	text-align: left;
 	background-color: firebrick;
