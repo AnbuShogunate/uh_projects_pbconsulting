@@ -1,0 +1,53 @@
+#top_left_logo
+{
+    background-color: darkcyan; width:100px; height:30px;
+}
+#Customer_Main_Page_New_Ticket
+{
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background: darkcyan;
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+}
+#Customer_Main_Page_Check_Status {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background: darkcyan;
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+}
+#Customer_Main_Page_View_KB {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background: darkcyan;
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+}
+#Customer_Main_Page_Logout {
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background: darkcyan;
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+}
