@@ -1,12 +1,12 @@
 $(function () {
-    $("#header-splash-load").load("../page_elements/header-splash.html");
+    $("#header-splash-load").load("./page_elements/header-splash.html");
 });
 $(function () {
-    $("#header-main-load").load("../page_elements/header-main.html");
+    $("#header-main-load").load("./page_elements/header-main.html");
 });
 $(function () {
-    $("#footer-load").load("../page_elements/footer.html");
+    $("#footer-load").load("./page_elements/footer.html");
 });
 $(function () {
-    $("#navbar-load").load("../page_elements/navbar.html");
+    $("#navbar-load").load("./page_elements/navbar.html");
 });
