@@ -3,7 +3,7 @@ body {
 	background-color: #ffffff;
 	/*white square background
 	background-repeat: no-repeat;*/
-	background-image: url("/uh_projects_pbconsulting/images/square-xxl.png");
+	background-image: url("/uh_projects_pbconsulting/style/images/square-xxl.png");
 	background-size: cover;
 	font-family: 'Ubuntu', sans-serif;
 	margin: 0px;
@@ -11,7 +11,7 @@ body {
 
 /*BANNER AND NAVBAR*/
 #header_banner_splash {
-	background-image: url("/uh_projects_pbconsulting/images/background.jpg");
+	background-image: url("/uh_projects_pbconsulting/style/images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 250px;
@@ -22,10 +22,10 @@ body {
 	margin-top: 0px;
 }
 #header_banner_main {
-	background-image: url("/uh_projects_pbconsulting/images/background.jpg");
+	background-image: url("/uh_projects_pbconsulting/style/images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 150px;
+	height: 100px;
 	color: white;
 	font-size: 40px;
 	text-align: center;
@@ -121,7 +121,7 @@ body {
 	height: 150px;
 }
 .ham_menu_toggle {
-	background-image: url("/uh_projects_pbconsulting/images/hamburger.png");
+	background-image: url("/uh_projects_pbconsulting/style/images/hamburger.png");
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: contain;
