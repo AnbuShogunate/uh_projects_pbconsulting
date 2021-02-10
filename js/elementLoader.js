@@ -11,5 +11,5 @@ $(function () {
     $("#navbar-load").load("/uh_projects_pbconsulting/page_elements/navbar.html");
 });
 $(function () {
-    $("#login_system").load("/uh_projects_pbconsulting/page_elements/login.html");
+    $("#login-system-load").load("/uh_projects_pbconsulting/page_elements/login.html");
 })
