@@ -1,7 +1,7 @@
 //var loginsystem = document.getElementById("login_system");
-var loginsubmit = document.getElementById("login_button");
-var loginsystem = document.getElementsByClassName("login_system");
-var logintable = document.getElementById("login_table");
+//var loginsubmit = document.getElementById("login_button");
+//var loginsystem = document.getElementsByClassName("login_system");
+//var logintable = document.getElementById("login_table");
 
 /*
 
