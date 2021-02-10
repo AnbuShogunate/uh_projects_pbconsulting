@@ -1,5 +1,6 @@
-var loginsystem = document.getElementById("login_system");
+//var loginsystem = document.getElementById("login_system");
 var loginsubmit = document.getElementById("login_button");
+var loginsystem = document.getElementsByClassName("login_system");
 
 /*
 
@@ -16,3 +17,12 @@ var loginsubmit = document.getElementById("login_button");
     }
 })
 */
+
+function login(loginsubmit) {
+    if (loginsubmit.getElementById("username_id") == "Admin" && loginsubmit.getElementById("password_id") == "root") {
+        location = '/uh_projects_pbconsulting/helpdesk/index.html';
+    }
+    else {
+        alert("invalid info");
+    }
+}
