@@ -1,9 +1,9 @@
 var loginsystem = document.getElementById("login_system");
 var loginsubmit = document.getElementById("login_button");
 
+/*
 
-
-loginsubmit.addEventListener("click", (e) => {
+//loginsubmit.addEventListener("click", (e) => {
     e.preventDefault();
     var name = loginsystem.user_username.value;
     var pass = loginsystem.user_password.value;
@@ -15,4 +15,4 @@ loginsubmit.addEventListener("click", (e) => {
         //window.location.href = 'CustomerMainPage.html';
     }
 })
-
+*/
