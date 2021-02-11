@@ -16,7 +16,7 @@ function validation(){
     {
         document.cookie = 'username=root; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/';
         //setcookie("root", islogin, 365);
-
+        islogin = document.cookie;
         alert("welcome back!");
         window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
         return true;
