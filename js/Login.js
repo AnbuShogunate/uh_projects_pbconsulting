@@ -20,6 +20,7 @@ function validation(){
         document.cookie = 'username=root; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/'; //creates cookie
         islogin = document.cookie;
         checklogin = true;
+        unhiding();
         alert(checklogin);
         window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
         return true;
@@ -36,6 +37,7 @@ function unvalidate(){
     {
         document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/'; //removes cookie
         //checklogin = document.cookie;
+        hiding();
         location.reload();
         alert("you have been logged out");
         return true;
@@ -46,6 +48,12 @@ function unvalidate(){
     }
 }
 
+function hiding(){
+    document.getElementById("something").style.visibility = "hidden";
+}
+function unhiding(){
+    document.getElementById("something").style.visibility = "visible";
+}
 /*function setcookie(name,value,days){
     var date = new Date();
     date.setTime(date.getTime() + (days*24*60*60*1000));
