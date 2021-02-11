@@ -13,3 +13,6 @@ $(function () {
 $(function () {
     $("#login-system-load").load("/uh_projects_pbconsulting/page_elements/login.html");
 })
+$(function () {
+    $("login-system-load-logout").load("/uh_projects_pbconsulting/page_elements/logout.html");
+})
