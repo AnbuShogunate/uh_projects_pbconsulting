@@ -5,7 +5,7 @@ var islogin = document.cookie;
 function validation(){
     var username = document.getElementById('usernameid').value;
     var password = document.getElementById('passwordid').value;
-    v//ar islogin = setcookie("admin");
+    //var islogin = setcookie("admin");
     if(islogin.username == 'root')
     {
         alert("you are already logged in!");
