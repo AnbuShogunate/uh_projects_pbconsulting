@@ -1,8 +1,9 @@
-function validation(username, password, islogin){
+var username = document.getElementById('usernameid').value;
+var password = document.getElementById('passwordid').value;
+var islogin = document.cookie;
 
-    var username = document.getElementById('usernameid').value;
-    var password = document.getElementById('passwordid').value;
-    var islogin = document.cookie;
+
+function validation(){
 
     if(islogin == 'root')
     {
@@ -25,6 +26,10 @@ function validation(username, password, islogin){
     }
 }
 
-function login(){
+function unvalidate(){
     
+    document.cookie = null;
+    islogin = null;
+
+    alert("you have been logged out");
 }
