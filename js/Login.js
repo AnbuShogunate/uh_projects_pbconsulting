@@ -7,6 +7,7 @@ function validation(username, password, islogin){
     if(islogin == 'root')
     {
         alert("you are already logged in!");
+        location.reload();
         return false;
     }
     else if(username === 'admin' && password === 'root')
