@@ -29,6 +29,8 @@ function login(loginsubmit) {
 }
 */
 
+var cookie = 0;
+
 function validate() {
     var username = document.getElementById("username_id");
     var password = document.getElementById("password_id");
@@ -37,7 +39,8 @@ function validate() {
     var password_input = password.value;
 
     if (username_input == 'admin' && password_input == 'root') {
-        //CookieSave(username_input);
+        cookie = 1;
+        location.reload();
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
         return true;
     }
@@ -46,8 +49,22 @@ function validate() {
     }
 }
 
-function CookieSave(value) {
-    var expire = new Date();
+function leCookie() {
+}
+function logout(){
+    window.location = "/uh_projects_pbconsulting/index.html";
+}
 
+function validation() {
+    alert("please login first");
+    window.location = "/uh_projects_pbconsulting/index.html"; 
+}
 
+function cookiecheck() {
+    if (cookie == 1) {
+        window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
+    }
+    else {
+        validation();
+    }
 }
