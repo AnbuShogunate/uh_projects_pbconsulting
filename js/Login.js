@@ -29,7 +29,7 @@ function login(loginsubmit) {
 }
 */
 
-function login() {
+function validate() {
     var username = document.getElementById("username_id");
     var password = document.getElementById("password_id");
 
