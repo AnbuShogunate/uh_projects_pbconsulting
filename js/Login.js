@@ -1,7 +1,7 @@
 
 var islogin = document.cookie;
 
-var checklogin = false;
+var checklogin;
 
 
 function validation(){
@@ -20,7 +20,7 @@ function validation(){
         document.cookie = 'username=root; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/'; //creates cookie
         islogin = document.cookie;
         checklogin = true;
-        alert("welcome back!");
+        alert(checklogin);
         window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
         return true;
     }
