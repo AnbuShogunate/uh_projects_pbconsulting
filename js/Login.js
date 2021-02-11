@@ -28,11 +28,6 @@ function login(loginsubmit) {
     }
 }
 */
-
-var cookie = 0;
-
-document.cookie = "username=admin";
-
 function validate() {
     var username = document.getElementById("username_id");
     var password = document.getElementById("password_id");
@@ -41,11 +36,16 @@ function validate() {
     var password_input = password.value;
 
     if (username_input == 'admin' && password_input == 'root') {
-        cookie = 1;
         location.reload();
         alert("welcome back!");
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
-        setcookie("username", username_input, 365);
+        if (getCookie(username_input) == "admin") {
+            checkCookie();
+        }
+        else {
+            setcookie("username", username_input, 365);
+        }
+        
         return true;
     }
     else {
