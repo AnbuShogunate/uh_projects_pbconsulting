@@ -29,16 +29,14 @@ function login(loginsubmit) {
 }
 */
 
-var username = document.getElementById("username_id");
-var password = document.getElementById("password_id");
-
-var username_input = username.value;
-var password_input = password.value;
+var username = document.getElementById("username_id").value;
+var password = document.getElementById("password_id").value;
 
 function validation(){
-    if (username_input === "admin" && password_input === "root") {
+    if (username === "admin" && password === "root") {
         alert("welcome back!");
         //setcookie("username", username_input, 365);
+        window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
     }
     else {
         alert("invalid username or password!");
