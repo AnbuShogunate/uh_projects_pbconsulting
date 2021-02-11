@@ -1,10 +1,10 @@
-var username = document.getElementById('usernameid').value;
-var password = document.getElementById('passwordid').value;
+
 var islogin = document.cookie;
 
 
 function validation(){
-
+    var username = document.getElementById('usernameid').value;
+    var password = document.getElementById('passwordid').value;
     if(islogin == 'root')
     {
         alert("you are already logged in!");
@@ -27,7 +27,7 @@ function validation(){
 }
 
 function unvalidate(){
-    
+
     document.cookie = null;
     islogin = null;
 
