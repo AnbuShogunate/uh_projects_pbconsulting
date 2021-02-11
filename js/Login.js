@@ -8,13 +8,13 @@ function validation(){
     var username = document.getElementById('usernameid').value;
     var password = document.getElementById('passwordid').value;
     //var islogin = setcookie("admin");
-    if(checklogin == true)
+    if(username === 'admin' && password === 'root' && checklogin == true)
     {
         alert("you are already logged in!");
         location.reload();
         return false;
     }
-    else if(username === 'admin' && password === 'root')
+    else if(username === 'admin' && password === 'root' && checklogin == false)
     {
         document.cookie = 'username=root; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/'; //creates cookie
         islogin = document.cookie;
