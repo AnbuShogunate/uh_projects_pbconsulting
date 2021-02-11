@@ -1,17 +1,17 @@
 function validation(username, password, islogin){
 
-    var username = document.getElementById("usernameid").value;
-    var password = document.getElementById("passwordid").value;
+    var username = document.getElementById('usernameid').value;
+    var password = document.getElementById('passwordid').value;
     var islogin = document.cookie;
 
-    if(islogin == "root")
+    if(islogin == 'root')
     {
         alert("you are already logged in!");
         return false;
     }
-    else if(username === "admin" && password === "root")
+    else if(username === 'admin' && password === 'root')
     {
-        document.cookie = "root";
+        document.cookie = 'root';
         islogin = document.cookie;
 
         alert("welcome back!");
