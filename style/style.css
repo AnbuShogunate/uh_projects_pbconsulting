@@ -213,6 +213,7 @@ body {
 #mainContent {
 	width: 100%;
 }
+/* need to update later
 #login_system {
 	color: black;
 	height: 100px;
@@ -222,7 +223,7 @@ body {
 	color: black;
 	height: 100px;
 	width: 100%;
-}
+}*/
 /*2 COL LAYOUT*/
 #style_2col_left_panel {
 	margin-top: 5px;

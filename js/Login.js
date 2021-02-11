@@ -31,6 +31,8 @@ function login(loginsubmit) {
 
 var cookie = 0;
 
+document.cookie = newCookie;
+
 function validate() {
     var username = document.getElementById("username_id");
     var password = document.getElementById("password_id");
@@ -41,6 +43,7 @@ function validate() {
     if (username_input == 'admin' && password_input == 'root') {
         cookie = 1;
         location.reload();
+        alert("welcome back!");
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
         return true;
     }
