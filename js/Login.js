@@ -7,14 +7,15 @@ var checklogin = false;
 function validation(){
     var username = document.getElementById('usernameid').value;
     var password = document.getElementById('passwordid').value;
+    checklogin = false;
     //var islogin = setcookie("admin");
-    if(username === 'admin' && password === 'root' && checklogin == true)
+    if(username === 'admin' && password === 'root' && checklogin === true)
     {
         alert("you are already logged in!");
         location.reload();
         return false;
     }
-    else if(username === 'admin' && password === 'root' && checklogin == false)
+    else if(username === 'admin' && password === 'root' && checklogin === false)
     {
         document.cookie = 'username=root; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/'; //creates cookie
         islogin = document.cookie;
@@ -30,11 +31,10 @@ function validation(){
 }
 
 function unvalidate(){
-    var vaalii = validation.islogin;
-    if(checklogin == true)
+    if(checklogin === true)
     {
         document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/'; //removes cookie
-        islogin = document.cookie;
+        //checklogin = document.cookie;
         location.reload();
         alert("you have been logged out");
         return true;
