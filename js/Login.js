@@ -31,7 +31,7 @@ function login(loginsubmit) {
 
 var cookie = 0;
 
-document.cookie = newCookie;
+document.cookie = "username=admin";
 
 function validate() {
     var username = document.getElementById("username_id");
@@ -45,9 +45,11 @@ function validate() {
         location.reload();
         alert("welcome back!");
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
+        setcookie("username", username_input, 365);
         return true;
     }
     else {
+        alert("invalid username or password!");
         return false;
     }
 }
@@ -71,3 +73,37 @@ function cookiecheck() {
         validation();
     }
 }
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function checkCookie() {
+    var username = getCookie("username");
+    if (username != "") {
+        alert("You are already logged in!");
+    }
+    else {
+        alert("please login first!");
+        window.location = "/uh_projects_pbconsulting/index.html"; 
+    }
+}
+
+setCookie("user_email", "bobthegreat@gmail.com", 30);
+var userEmail = getCookie("user_email");
