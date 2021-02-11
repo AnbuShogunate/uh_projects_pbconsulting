@@ -31,8 +31,8 @@ function login(loginsubmit) {
 var username = document.getElementById("username_id");
 var password = document.getElementById("password_id");
 
-//var username_input = username.value;
-//var password_input = password.value;
+var username_input = username.value;
+var password_input = password.value;
 
 function login(){
     if(getCookie(username_input)=="admin"){
