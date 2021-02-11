@@ -218,7 +218,11 @@ body {
 	height: 100px;
 	width: 100%;
 }
-
+#login_system_logout {
+	color: black;
+	height: 100px;
+	width: 100%;
+}
 /*2 COL LAYOUT*/
 #style_2col_left_panel {
 	margin-top: 5px;
