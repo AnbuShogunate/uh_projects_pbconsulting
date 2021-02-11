@@ -28,27 +28,34 @@ function login(loginsubmit) {
     }
 }
 */
+
 var username = document.getElementById("username_id");
 var password = document.getElementById("password_id");
 
 var username_input = username.value;
 var password_input = password.value;
 
+var checker = 
+
 function login(){
+    something();
  //   if(getCookie(username_input)=="admin"){
   //      alert("you are already logged in!");
  //       window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
  //   }
  //   else{
-        if (username_input === "admin" && password_input === "root") {
-            //location.reload(); not sure about what this code does
-            alert("welcome back!");
-            setcookie("username", username_input, 365);
-        }
-        else {
-            alert("invalid username or password!");
-        }
+        
    // }
+}
+
+function validation(){
+    if (username_input === "admin" && password_input === "root") {
+        alert("welcome back!");
+        //setcookie("username", username_input, 365);
+    }
+    else {
+        alert("invalid username or password!");
+    }
 }
 
 function leCookie() {
@@ -60,10 +67,7 @@ function logout(){
     window.location = "/uh_projects_pbconsulting/index.html";
 }
 
-function validation() {
-    alert("please login first");
-    window.location = "/uh_projects_pbconsulting/index.html"; 
-}
+
 
 function cookiecheck() {
     if (cookie == 1) {
