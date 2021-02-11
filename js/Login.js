@@ -28,35 +28,34 @@ function login(loginsubmit) {
     }
 }
 */
-function validate() {
-    var username = document.getElementById("username_id");
-    var password = document.getElementById("password_id");
+var username = document.getElementById("username_id");
+var password = document.getElementById("password_id");
 
-    var username_input = username.value;
-    var password_input = password.value;
+var username_input = username.value;
+var password_input = password.value;
 
-    if (username_input == 'admin' && password_input == 'root') {
-        location.reload();
-        alert("welcome back!");
+function login(){
+    if(getCookie(username_input)=="admin"){
+        alert("you are already logged in!");
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
-        if (getCookie(username_input) == "admin") {
-            checkCookie();
-        }
-        else {
+    }
+    else{
+        if (username_input == 'admin' && password_input == 'root') {
+            //location.reload(); not sure about what this code does
+            alert("welcome back!");
             setcookie("username", username_input, 365);
         }
-        
-        return true;
-    }
-    else {
-        alert("invalid username or password!");
-        return false;
+        else {
+            alert("invalid username or password!");
+        }
     }
 }
 
 function leCookie() {
 }
 function logout(){
+    //setcookie("username", username_input, 0);
+    document.cookie = username_input + '=;expires=Thu, 01 Jan 2000 00:00:01 GMT;';
     window.location = "/uh_projects_pbconsulting/index.html";
 }
 
@@ -104,6 +103,3 @@ function checkCookie() {
         window.location = "/uh_projects_pbconsulting/index.html"; 
     }
 }
-
-setCookie("user_email", "bobthegreat@gmail.com", 30);
-var userEmail = getCookie("user_email");
