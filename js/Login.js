@@ -1,13 +1,29 @@
-var usernamevalues = document.getElementById("usernameid").value;
-var passwordvalues = document.getElementById("passwordid").value;
+function validation(username, password, islogin){
 
-function validation(){
-    if (usernamevalues === "admin" && passwordvalues === "root") {
+    var username = document.getElementById("usernameid").value;
+    var password = document.getElementById("passwordid").value;
+    var islogin = document.cookie;
+
+    if(islogin == "root")
+    {
+        alert("you are already logged in!");
+        return false;
+    }
+    else if(username === "admin" && password === "root")
+    {
+        document.cookie = "root";
+        islogin = document.cookie;
+
         alert("welcome back!");
-        //setcookie("username", username_input, 365);
         window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
+        return true;
     }
-    else {
+    else{
         alert("invalid username or password!");
+        return false;
     }
+}
+
+function login(){
+    
 }
