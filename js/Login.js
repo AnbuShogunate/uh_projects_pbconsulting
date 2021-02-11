@@ -38,7 +38,7 @@ function unvalidate(){
         document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/'; //removes cookie
         //checklogin = document.cookie;
         hiding();
-        location.reload();
+        //location.reload();
         alert("you have been logged out");
         return true;
     }
