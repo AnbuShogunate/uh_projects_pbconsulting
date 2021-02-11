@@ -54,6 +54,7 @@ function login(){
 function leCookie() {
 }
 function logout(){
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
     //setcookie("username", username_input, 0);
     document.cookie = username_input + '=;expires=Thu, 01 Jan 2000 00:00:01 GMT;';
     window.location = "/uh_projects_pbconsulting/index.html";
