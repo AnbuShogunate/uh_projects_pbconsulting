@@ -1,36 +1,42 @@
+<!--
 <div class="login_system">
 	<form id="login_system_form" method="post">
-		<!-- table can be removed later-->
+		<!-- table can be removed later
 		<table id="login_table">
 			<tr>
 				<td>Username:</td>
 				<td>
-					<input type="text" name="user_username" id="username_id" class="login_system_area" />
+					<input type="text" name="user_username" id="username_id" class="login_system_area" required/>
 				</td>
 			</tr>
 			<tr>
 				<td>Password:</td>
 				<td>
-					<input type="password" name="user_password" id="password_id" class="login_system_area" />
+					<input type="password" name="user_password" id="password_id" class="login_system_area" required/>
 				</td>
 			</tr>
 			<tr>
-				<td>
-					Login
-					<!--<input type="submit" id="login_button" />-->
-				</td>
+				<td>Login</td>
 			</tr>
 			<tr>
-				<!-- does nothing atm-->
+				<!-- does nothing atm-
 				Forgot password?
 				<a href="forgotpassword.html"> Help</a>
 			</tr>
 			<tr>
-				<!-- does nothing atm-->
+				<!-- does nothing atm-
 				Go back
 				<a href="LoginMainPage.html"> Go back</a>
 			</tr>
 		</table>
 	</form>
 	<div id="login-system-load"></div>
+</div>
+
+-->
+
+<div id="login-system-load">
+	<label>Username</label> <input type="text" required />
+	<label>Password</label> <input type="password" required />
+	<button type="submit">Login</button>
 </div>

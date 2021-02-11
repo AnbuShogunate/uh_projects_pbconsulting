@@ -29,7 +29,7 @@ function login(loginsubmit) {
 }
 */
 
-function login() {
+/*function login() {
     var username = document.getElementById("username_id");
     var password = document.getElementById("password_id");
 
@@ -44,10 +44,11 @@ function login() {
         return false;
     }
 }
-/*
+
 function CookieSave(value) {
     var expire = new Date();
 
 
 }
 */
+
