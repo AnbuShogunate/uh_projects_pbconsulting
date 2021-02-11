@@ -1,8 +1,8 @@
-var username_values = document.getElementById("username_id").value;
-var password_values = document.getElementById("password_id").value;
+var usernamevalues = document.getElementById("usernameid").value;
+var passwordvalues = document.getElementById("passwordid").value;
 
 function validation(){
-    if (username_values === "admin" && password_values === "root") {
+    if (usernamevalues === "admin" && passwordvalues === "root") {
         alert("welcome back!");
         //setcookie("username", username_input, 365);
         window.location = '/uh_projects_pbconsulting/helpdesk/index.html';
