@@ -40,7 +40,7 @@ function login(){
         window.location = "/uh_projects_pbconsulting/helpdesk/index.html";
     }
     else{
-        if (username_input == 'admin' && password_input == 'root') {
+        if (username_input == "admin" && password_input == "root") {
             //location.reload(); not sure about what this code does
             alert("welcome back!");
             setcookie("username", username_input, 365);
